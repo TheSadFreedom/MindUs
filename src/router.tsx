@@ -8,6 +8,7 @@ import { SignUpPage } from "./Pages/SignUpPage/SignUpPage"
 import { ShopPage } from "./Pages/ShopPage/ShopPage"
 import { UserPage } from "./Pages/UserPage/UserPage";
 import { ContactsPage } from "./Pages/ContactsPage/ContactsPage";
+import { ProductPage } from "./Pages/ProductPage/Product";
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ export const AppRoutes: React.FC = () => {
         <Route path="Shop" element={<ShopPage />} />
         <Route path="User" element={<UserPage />} />
         <Route path="Contacts" element={<ContactsPage />} />
+        <Route path="Product" element={<ProductPage />} />
       </Routes>
 
       <Footer />

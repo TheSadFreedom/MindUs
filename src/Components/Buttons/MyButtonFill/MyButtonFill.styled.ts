@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Button } from "@mui/material";
 
-export const DownloadButtonStyled = styled(Button)(() => ({
+export const MyButtonFillStyled = styled(Button)(() => ({
     "&&": {
     zIndex: '1',
     borderRadius: 'calc(0.7vh + 0.4vw)',

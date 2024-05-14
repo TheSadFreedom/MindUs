@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { DownloadButtonStyled } from "../../Components/Buttons/DownloadButton/DownloadButton.styled";
 import { StyledH1, StyledLargeP } from "../../styles/styled";
 
 export const MainPageStyled = styled("div")(() => ({
@@ -42,16 +41,6 @@ export const UTPShortInfo = styled("h3")(() => ({
     fontSize: 'calc(1.1vh + 0.6vw)',
     color: 'rgba(241, 241, 241, 1)',
     lineHeight: 'calc(1.6vh + 0.9vw)'
-}));
-
-export const UTPDownloadButton = styled(DownloadButtonStyled)(() => ({
-  "&&": {
-    width: '25vw',
-    height: '9.7vh',
-    fontSize: 'calc(1.6vh + 0.9vw)',
-    fontWeight: 'calc(55vh + 31vw)',
-    marginTop: '5vh',
-  },
 }));
 
 export const FluidImg = styled("img")(() => ({

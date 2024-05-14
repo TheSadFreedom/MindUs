@@ -6,14 +6,14 @@ import {
   CardProductStyledHeadImg,
   CardProductStyledDescription,
 } from "./CardProduct.styled";
-import { StyledH2, StyledH4, StyledSmallP } from "../../styles/styled";
+import { StyledH4, StyledSmallP, StyledTitleLink } from "../../styles/styled";
 
 export const CardProduct = () => {
   return (
     <CardProductStyled>
       <CardProductStyledHead>
         <CardProductStyledHeadImg></CardProductStyledHeadImg>
-        <StyledH2>Название</StyledH2>
+        <StyledTitleLink to={"/Product"}>Название</StyledTitleLink>
       </CardProductStyledHead>
       <CardProductStyledDescription>
         <StyledH4>

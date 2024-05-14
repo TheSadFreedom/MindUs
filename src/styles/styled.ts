@@ -10,6 +10,15 @@ export const StyledNavigationLink = styled(Link)(() => ({
     color: '#ababab',
 }))
 
+export const StyledTitleLink = styled(Link)(() => ({
+    fontFamily: 'Proxima Nova',
+    fontSize: '40px',
+    lineHeight: '40px',
+    fontWeight: '600',
+    textDecoration: 'none',
+    color: '#f1f1f1',
+}))
+
 export const StyledNavigationH2 = styled('h2')(() => ({
     fontFamily: 'Open Sans',
     fontSize: '24px',
@@ -20,7 +29,7 @@ export const StyledNavigationH2 = styled('h2')(() => ({
 
 export const StyledH1 = styled('h1')(() => ({
     fontFamily: 'Proxima Nova',
-    fontSize: '40px',
+    fontSize: '45px',
     lineHeight: '40px',
     fontWeight: '800',
     color: '#f1f1f1',
