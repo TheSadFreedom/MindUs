@@ -1,35 +1,31 @@
 import React from 'react'
 import {
   FooterStyle, 
-  FooterHeader, 
-  FooterTitle, 
   FooterLinks, 
-  FooterYear,
-  FooterLink
 } from './Footer.styled'
+import { StyledNavigationH2, StyledNavigationLink } from '../../styles/styled'
 
 
 export const Footer = () =>(
   <footer>
     <FooterStyle>
-      <FooterTitle>AI Store</FooterTitle>
+      <StyledNavigationH2>AI Store</StyledNavigationH2>
       <div>
-        <FooterHeader>Контакты</FooterHeader>
+        <StyledNavigationH2>Контакты</StyledNavigationH2>
         <FooterLinks>
-          <FooterLink to={'/'}>+7 (999) 999-99-99</FooterLink>
-          <FooterLink to={'/'}>Дискорд</FooterLink>
-          <FooterLink to={'/'}>Телеграм</FooterLink>
-          <FooterLink to={'/'}>email@gmail.com</FooterLink>
+          <StyledNavigationLink to={'/'}>+7 (999) 999-99-99</StyledNavigationLink>
+          <StyledNavigationLink to={'/'}>Дискорд</StyledNavigationLink>
+          <StyledNavigationLink to={'/'}>Телеграм</StyledNavigationLink>
+          <StyledNavigationLink to={'/'}>email@gmail.com</StyledNavigationLink>
         </FooterLinks>
       </div>
       <div>
-        <FooterHeader>Правовая информация</FooterHeader>
+        <StyledNavigationH2>Правовая информация</StyledNavigationH2>
         <FooterLinks>
-          <FooterLink to={'/'}>Политика конфиденциальности</FooterLink>
-          <FooterLink to={'/'}>Условия пользования сайтом</FooterLink>
+          <StyledNavigationLink to={'/'}>Политика конфиденциальности</StyledNavigationLink>
+          <StyledNavigationLink to={'/'}>Условия пользования сайтом</StyledNavigationLink>
         </FooterLinks>
       </div>
-      <FooterYear>@2023</FooterYear> 
     </FooterStyle>
   </footer>
 )
