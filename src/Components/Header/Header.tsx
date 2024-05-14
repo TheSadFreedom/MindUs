@@ -17,11 +17,10 @@ export const Header = () => {
       <HeaderLogoStyled></HeaderLogoStyled>
       <HeaderLinksStyled>
         <HeaderLinkStyled to="/">Главная</HeaderLinkStyled>
-        <HeaderLinkStyled to="/">Нейросети</HeaderLinkStyled>
-        <HeaderLinkStyled to="/">Новости</HeaderLinkStyled>
-        <HeaderLinkStyled to="/">Контакты</HeaderLinkStyled>
+        <HeaderLinkStyled to="/Shop">Нейросети</HeaderLinkStyled>
+        <HeaderLinkStyled to="/Contacts">Контакты</HeaderLinkStyled>
       </HeaderLinksStyled>
-      <HeaderButton />
+      
       <HeaderSignLinksStyled>
         <HeaderSignStyled to="/Login" style={{ textAlign: 'right'}}>Войти</HeaderSignStyled>
         <p>l</p>

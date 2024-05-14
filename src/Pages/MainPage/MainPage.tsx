@@ -29,7 +29,6 @@ export const MainPage = () => {
             потребность. Обеспечьте себя передовыми решениями в области
             искусственного интеллекта прямо сейчас!
           </UTPShortInfo>
-          <UTPDownloadButton>Скачать приложение</UTPDownloadButton>
         </FirstSlideLeftStyled>
         <FirstSlideRightStyled>
           <FluidImg src={Fluid} alt="Fluid SVG" />

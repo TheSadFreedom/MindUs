@@ -1,5 +1,11 @@
 import React from "react";
-export const MainPage = () => {
-    return (
-        <div></div>
-    )}
+import { CardProduct } from "../../Components/CardProduct/CardProduct";
+import { ShopPageStyled } from "./ShopPage.styled";
+export const ShopPage = () => {
+  return (
+    <ShopPageStyled>
+      <CardProduct></CardProduct>
+      <CardProduct></CardProduct>
+    </ShopPageStyled>
+  );
+};

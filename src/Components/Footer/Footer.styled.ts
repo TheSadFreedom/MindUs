@@ -7,8 +7,7 @@ export const FooterStyle = styled('footer')(() => ({
     width: '100vw',
     paddingTop: '40px',
     borderTop: '1px solid white',
-    backgroundColor: 'rgb(23, 22, 27)',
-}))
+    }))
 
 export const FooterTitle = styled('p')(() => ({
     paddingLeft: '50px',
