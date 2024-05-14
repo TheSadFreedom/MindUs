@@ -4,24 +4,22 @@ import {
   CardProductStyled,
   CardProductStyledHead,
   CardProductStyledHeadImg,
-  CardProductStyledHeadTitle,
   CardProductStyledDescription,
-  CardProductStyledDescriptionTitle,
-  CardProductStyledDescriptionText,
 } from "./CardProduct.styled";
+import { StyledH2, StyledH4, StyledSmallP } from "../../styles/styled";
 
 export const CardProduct = () => {
   return (
     <CardProductStyled>
       <CardProductStyledHead>
         <CardProductStyledHeadImg></CardProductStyledHeadImg>
-        <CardProductStyledHeadTitle>Название</CardProductStyledHeadTitle>
+        <StyledH2>Название</StyledH2>
       </CardProductStyledHead>
       <CardProductStyledDescription>
-        <CardProductStyledDescriptionTitle>
+        <StyledH4>
           Описание
-        </CardProductStyledDescriptionTitle>
-        <CardProductStyledDescriptionText>
+        </StyledH4>
+        <StyledSmallP>
           Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
           turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
           fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
@@ -31,7 +29,7 @@ export const CardProduct = () => {
           egestas, ac sclitora torquent per conubia nostra, per inceptos
           himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque
           ante..
-        </CardProductStyledDescriptionText>
+        </StyledSmallP>
       </CardProductStyledDescription>
     </CardProductStyled>
   );

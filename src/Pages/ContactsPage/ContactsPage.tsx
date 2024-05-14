@@ -6,7 +6,7 @@ const Fluid: string = require("../../Images/Fluid.svg").default;
 export const ContactsPage = () => {
     return (
         <ContactsPageStyled>
-            <ContactsPageStyledTitle>Контакты</ContactsPageStyledTitle>
+            <ContactsPageStyledTitle>Связаться с нами можно тут</ContactsPageStyledTitle>
             <ContactsPageStyledLinks>
                 <ContactsPageStyledLink to="/">+7 (999) 999-99-99</ContactsPageStyledLink>
                 <ContactsPageStyledLink to="/">Discord</ContactsPageStyledLink>

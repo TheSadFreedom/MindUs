@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-export const ShopPageStyled = styled("from")(() => ({
-    minHeight: '100vh',
+export const ShopPageStyled = styled("form")(() => ({
     height: '100%',
-    padding: '16vh 3vw',
+    width: '100vw',
+    
     display: 'grid',
-    gridTemplateColumns: "1fr 1fr",
-    columnGap: '2vw',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    columnGap: '0px',
+    rowGap: '50px',
+
+    justifyItems: 'center',
+    padding: '20vh 0',
 }));

@@ -1,6 +1,4 @@
 import { styled } from "@mui/material"
-import { Link } from "react-router-dom"
-import { StyledNavigationH2, StyledSmallP } from "../../styles/styled"
 
 export const FooterStyle = styled('footer')(() => ({
     display: 'grid',

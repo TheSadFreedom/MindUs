@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ContactsPageStyled = styled("div")(() => ({
-    height: '45vh',
-    padding: '15vh 10vw',
+    height: '50vh',
+    padding: '25vh 10vw',
 }));
 
 export const ContactsPageStyledTitle = styled("h1")(() => ({
@@ -13,7 +13,6 @@ export const ContactsPageStyledTitle = styled("h1")(() => ({
     color: 'rgba(241, 241, 241, 1)',
     lineHeight: 'calc(3vh + 1.7vw)',
     paddingBottom: '10vh',
-    width: '200px'
 }));
 
 export const ContactsPageStyledLinks = styled("div")(() => ({
@@ -35,7 +34,7 @@ export const ContactsPageStyledLink = styled(Link)(() => ({
 
 export const ContactsPageStyledImg = styled("img")(() => ({
     zIndex: '-99',
-    position: 'relative',
-    width: '',
     marginLeft: '40vw',
+    marginTop: '-500px',
+    width: '1000px',
 }));

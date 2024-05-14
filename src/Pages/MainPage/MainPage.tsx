@@ -7,12 +7,12 @@ import {
   FirstSlideRightStyled,
   UTPTitle,
   UTPShortInfo,
-  UTPDownloadButton,
   FluidImg,
   SecondSlideStyled,
-  MyH1,
+  StyledH1Edit,
   ShortDescription,
 } from "./MainPage.styled";
+import { StyledH1 } from "../../styles/styled";
 
 const Fluid: string = require("../../Images/Fluid.svg").default;
 
@@ -35,7 +35,7 @@ export const MainPage = () => {
         </FirstSlideRightStyled>
       </FirstSlideStyled>
       <SecondSlideStyled>
-        <MyH1>Кратко о проекте</MyH1>
+        <StyledH1Edit>Кратко о проекте</StyledH1Edit>
         <ShortDescription>
           MindUs - ваш надежный партнер в мире искусственного интеллекта,
           предлагающий самые передовые нейросетевые решения для широкого спектра

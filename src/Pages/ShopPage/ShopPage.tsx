@@ -6,6 +6,8 @@ export const ShopPage = () => {
     <ShopPageStyled>
       <CardProduct></CardProduct>
       <CardProduct></CardProduct>
+      <CardProduct></CardProduct>
+      <CardProduct></CardProduct>
     </ShopPageStyled>
   );
 };
