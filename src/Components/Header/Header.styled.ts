@@ -2,23 +2,17 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const StyledHeader = styled('div')(({theme}) => ({
-    width: '90vw',
+    width: '100%',
     height: '15vh',
-    position: 'absolute',
-
-    padding: '0 5vw',
-
     display: 'flex',
     justifyContent: 'center',
-    columnGap: '7vw',
     alignItems: 'center',
+    columnGap: '10vw',
+    position: 'absolute',
 }))
 
-export const HeaderLogoStyled = styled('div')(({theme}) => ({
-    width: '70px',
-    height: '70px',
-    background: 'white',
-    borderRadius: '75px',
+export const HeaderLogoStyled = styled('img')(({theme}) => ({
+    width: '300px'
 }))
 
 export const HeaderLinksStyled = styled('div')(({theme}) => ({
@@ -28,26 +22,10 @@ export const HeaderLinksStyled = styled('div')(({theme}) => ({
     textAlign: 'center',
 }))
 
-export const HeaderLinkStyled = styled(Link)(({theme}) => ({
-    fontFamily: 'sans-serif, OpenSans',
-    textDecoration: 'none',
-    fontSize: 'calc(1.3vh + 0.7vw)',
-    color: 'rgba(241, 241, 241, 1)',
-    fontWeight: '400'
-}))
-
 export const HeaderSignLinksStyled = styled('div')(({theme}) => ({
     display: 'flex',
     columnGap: '5px',
     alignItems: 'center',
     fontSize: 'calc(1vh + 0.5vw)',
-    color: 'rgba(241, 241, 241, 1)',
-}))
-
-export const HeaderSignStyled = styled(Link)(({theme}) => ({
-    fontFamily: 'sans-serif, OpenSans',
-    textDecoration: 'none',
-    fontSize: 'calc(0.9vh + 0.5vw)',
-    color: 'rgba(241, 241, 241, 1)',
-    fontWeight: 'calc(27.5vh + 15.5vw)',
+    color: '#f1f1f1',
 }))

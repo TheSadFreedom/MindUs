@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 
-export const LoginPageStyled = styled("from")(() => ({
+export const LoginPageStyled = styled("form")(() => ({
   width: "100vw",
   height: "100vh",
-  background: "rgba(23, 22, 27, 1)",
   zIndex: "1",
   display: "flex",
   justifyContent: "center",

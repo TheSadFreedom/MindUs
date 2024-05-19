@@ -7,13 +7,14 @@ import {
   FirstSlideRightStyled,
   UTPTitle,
   UTPShortInfo,
-  UTPDownloadButton,
   FluidImg,
   SecondSlideStyled,
-  MyH1,
+  StyledH1Edit,
   ShortDescription,
 } from "./MainPage.styled";
 import { Api_Client } from "../../services/Api_client";
+import { StyledH1 } from "../../styles/styled";
+
 
 const Fluid: string = require("../../Images/Fluid.svg").default;
 
@@ -33,14 +34,13 @@ export const MainPage = () => {
             потребность. Обеспечьте себя передовыми решениями в области
             искусственного интеллекта прямо сейчас!
           </UTPShortInfo>
-          <UTPDownloadButton>Скачать приложение</UTPDownloadButton>
         </FirstSlideLeftStyled>
         <FirstSlideRightStyled>
           <FluidImg src={Fluid} alt="Fluid SVG" />
         </FirstSlideRightStyled>
       </FirstSlideStyled>
       <SecondSlideStyled>
-        <MyH1>Кратко о проекте</MyH1>
+        <StyledH1Edit>Кратко о проекте</StyledH1Edit>
         <ShortDescription>
           MindUs - ваш надежный партнер в мире искусственного интеллекта,
           предлагающий самые передовые нейросетевые решения для широкого спектра

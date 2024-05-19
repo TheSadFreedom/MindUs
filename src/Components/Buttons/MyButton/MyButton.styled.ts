@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Button from "@mui/material/Button";
 
-export const StyledHeaderButton = styled(Button)(() => ({
+export const MyButtonStyled = styled(Button)(() => ({
   "&&": {
     background: "none",
     border: "2px solid rgba(126, 90, 240, 1)",
@@ -13,7 +13,8 @@ export const StyledHeaderButton = styled(Button)(() => ({
     fontFamily: 'sans-serif, Open Sans',
     textTransform: 'none',
     zIndex: '9999',
-
+    alignSelf: 'center',
+    justifySelf: 'center',
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',

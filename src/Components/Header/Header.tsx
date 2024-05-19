@@ -4,28 +4,34 @@ import {
   StyledHeader,
   HeaderLogoStyled,
   HeaderLinksStyled,
-  HeaderLinkStyled,
-  HeaderSignStyled,
   HeaderSignLinksStyled,
 } from "./Header.styled";
 //components
-import { HeaderButton } from "../Buttons/HeaderButton/HeaderButton";
+import { StyledNavigationLink } from "../../styles/styled";
+import { Link } from "react-router-dom";
+
+const Logo: string = require("../../Images/logo.svg").default;
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <HeaderLogoStyled></HeaderLogoStyled>
+      <Link to={"/"}>
+        <HeaderLogoStyled src={Logo} alt="logo" />
+      </Link>
       <HeaderLinksStyled>
-        <HeaderLinkStyled to="/">Главная</HeaderLinkStyled>
-        <HeaderLinkStyled to="/">Нейросети</HeaderLinkStyled>
-        <HeaderLinkStyled to="/">Новости</HeaderLinkStyled>
-        <HeaderLinkStyled to="/">Контакты</HeaderLinkStyled>
+        <StyledNavigationLink to="/">Главная</StyledNavigationLink>
+        <StyledNavigationLink to="/Shop">Нейросети</StyledNavigationLink>
+        <StyledNavigationLink to="/Contacts">Контакты</StyledNavigationLink>
       </HeaderLinksStyled>
-      <HeaderButton />
+
       <HeaderSignLinksStyled>
-        <HeaderSignStyled to="/Login" style={{ textAlign: 'right'}}>Войти</HeaderSignStyled>
+        <StyledNavigationLink to="/Login" style={{ textAlign: "right" }}>
+          Войти
+        </StyledNavigationLink>
         <p>l</p>
-        <HeaderSignStyled to="/SignUp" style={{ textAlign: 'left'}}>Регистрация</HeaderSignStyled>
+        <StyledNavigationLink to="/SignUp" style={{ textAlign: "left" }}>
+          Регистрация
+        </StyledNavigationLink>
       </HeaderSignLinksStyled>
     </StyledHeader>
   );

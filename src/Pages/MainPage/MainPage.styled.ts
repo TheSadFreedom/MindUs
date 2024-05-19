@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { DownloadButtonStyled } from "../../Components/Buttons/DownloadButton/DownloadButton.styled";
+import { StyledH1, StyledLargeP } from "../../styles/styled";
 
 export const MainPageStyled = styled("div")(() => ({
   width: '100vw',
-  background: 'rgba(23, 22, 27, 1)',
   zIndex: '1',
 }));
 
@@ -14,6 +13,7 @@ export const FirstSlideStyled = styled("div")(() => ({
 
   height: '100vh',
   width: '100vw',
+
 }));
 
 export const FirstSlideLeftStyled = styled("div")(() => ({
@@ -43,16 +43,6 @@ export const UTPShortInfo = styled("h3")(() => ({
     lineHeight: 'calc(1.6vh + 0.9vw)'
 }));
 
-export const UTPDownloadButton = styled(DownloadButtonStyled)(() => ({
-  "&&": {
-    width: '25vw',
-    height: '9.7vh',
-    fontSize: 'calc(1.6vh + 0.9vw)',
-    fontWeight: 'calc(55vh + 31vw)',
-    marginTop: '5vh',
-  },
-}));
-
 export const FluidImg = styled("img")(() => ({
     width: 'calc(41vh + 23vw)',
 }));
@@ -62,16 +52,13 @@ export const SecondSlideStyled = styled("div")(() => ({
   width: '100vw',
 }));
 
-export const MyH1 = styled("h1")(() => ({
-  fontFamily: 'Proxima Nova',
-  color: '#F1F1F1',
-  fontSize: '40px',
+export const StyledH1Edit = styled(StyledH1)(() => ({
   zIndex: '9999',
   textAlign: 'center',
   marginTop: '5vh'
 }))
 
-export const ShortDescription = styled("p")(() => ({
+export const ShortDescription = styled(StyledLargeP)(() => ({
   margin: '10vh 20vw',
   fontFamily: 'Open Sans',
   fontSize: '25px',
