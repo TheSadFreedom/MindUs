@@ -13,10 +13,14 @@ import {
   MyH1,
   ShortDescription,
 } from "./MainPage.styled";
+import { Api_Client } from "../../services/Api_client";
 
 const Fluid: string = require("../../Images/Fluid.svg").default;
 
 export const MainPage = () => {
+
+
+
   return (
     <MainPageStyled>
       <FirstSlideStyled>

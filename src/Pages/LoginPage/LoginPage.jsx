@@ -7,9 +7,12 @@ import {
   LoginInputStyled,
   LoginButtonStyled,
 } from "./LoginPage.styled";
+import { Api_Client } from "../../services/Api_client";
 
 export const LoginPage = () => {
-    return (
+
+
+  return (
     <LoginPageStyled>
       <LoginTitleStyled>Войти в аккаунт</LoginTitleStyled>
       <LoginInputStyled
@@ -18,7 +21,7 @@ export const LoginPage = () => {
         variant="outlined"
         color="secondary"
         name="email"
-        />
+      />
       <LoginInputStyled
         id="password-input"
         label="Пароль"
@@ -26,7 +29,7 @@ export const LoginPage = () => {
         color="secondary"
         name="password"
         type="password"
-        />
+      />
       <LoginButtonStyled type="submit">Войти</LoginButtonStyled>
     </LoginPageStyled>
   );
