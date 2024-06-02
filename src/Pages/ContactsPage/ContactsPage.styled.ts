@@ -18,8 +18,11 @@ export const ContactsPageStyledTitle = styled("h1")(() => ({
 export const ContactsPageStyledLinks = styled("div")(() => ({
     display: 'grid',
     gridTemplateRows: 'repeat(4, 1fr)',
+    gridTemplateColumns: '0.1fr 1fr',
+    columnGap: '1vw',
     rowGap: '3vh',
-    width: '200px'
+    width: '300px',
+    alignItems: 'center',
 }));
 
 export const ContactsPageStyledLink = styled(Link)(() => ({
@@ -37,4 +40,8 @@ export const ContactsPageStyledImg = styled("img")(() => ({
     marginLeft: '40vw',
     marginTop: '-500px',
     width: '1000px',
+}));
+
+export const ContactsPageStyledLogoImg = styled("img")(() => ({
+    width: '1.5vw',
 }));

@@ -15,7 +15,7 @@ export class Api_Client {
 
     }
 
-    async post() {
+     post() {
         console.log("1212")
         let headers = null;
         let body = {
@@ -43,15 +43,14 @@ export class Api_Client {
         //     })
         // }).then(res => console.log(res))
 
-        // axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-        // axios.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+        axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+        axios.defaults.headers.post["Content-Type"] = "application/json";
 
         axios.post('http://127.0.0.1:8000/api/v1/users/', {
             "user": {
-                "username": "user12345",
-                "email": "user132432451@user.user",
-                "password": "*1234567898"
-            }
+                "username": "user12334",
+                "email": "user234@user.user",
+                "password": "2343890567"            }
         }).then(resp => {
             console.log(resp)
         });

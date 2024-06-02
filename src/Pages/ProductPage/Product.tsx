@@ -8,6 +8,8 @@ import {
 } from "./Product.styled";
 import { StyledH1, StyledH3, StyledSmallP } from "../../styles/styled";
 
+
+
 export const ProductPage = () => {
   return (
     <ProductPageStyled>

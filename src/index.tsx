@@ -9,8 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-let api_client = new Api_Client();
-// api_client.post();
+
 
 console.log("Я index")
 

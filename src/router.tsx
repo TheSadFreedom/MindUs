@@ -6,7 +6,7 @@ import { Footer } from "./Components/Footer/Footer";
 import { LoginPage } from "./Pages/LoginPage/LoginPage";
 import { SignUpPage } from "./Pages/SignUpPage/SignUpPage"
 import { ShopPage } from "./Pages/ShopPage/ShopPage"
-import { UserPage } from "./Pages/UserPage/UserPage";
+import { ProfilePage } from "./Pages/ProfilePage/ProfilePage";
 import { ContactsPage } from "./Pages/ContactsPage/ContactsPage";
 import { ProductPage } from "./Pages/ProductPage/Product";
 
@@ -20,7 +20,7 @@ export const AppRoutes: React.FC = () => {
         <Route path="Login" element={<LoginPage />} />
         <Route path="SignUp" element={<SignUpPage />} />
         <Route path="Shop" element={<ShopPage />} />
-        <Route path="User" element={<UserPage />} />
+        <Route path="User" element={<ProfilePage />} />
         <Route path="Contacts" element={<ContactsPage />} />
         <Route path="Product" element={<ProductPage />} />
       </Routes>

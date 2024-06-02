@@ -6,6 +6,8 @@ interface ScrollToTopButtonProps {
 }
 
 const ScrollToTopButton: React.FC<ScrollToTopButtonProps> = ({ children }) => {
+  const ArrowUp: string = require("../../../Images/ArrowUp.svg").default;
+  
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -38,6 +40,7 @@ const ScrollToTopButton: React.FC<ScrollToTopButtonProps> = ({ children }) => {
         onClick={scrollToTop}
         style={{ display: isVisible ? "block" : "none" }}
         title="Вернуться наверх"
+        src={ArrowUp}
       >
       </ScrollToTopButtonStyled>
       {children}
