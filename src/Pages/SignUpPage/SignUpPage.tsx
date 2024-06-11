@@ -1,69 +1,85 @@
-import React, { useState } from "react";
-import { SignUpPageStyled, SignUpTitleStyled, SignUpInputStyled, SignUpButtonStyled } from "./SignUpPage.styled";
-import { register } from "../../services/services";
+import React, { useState, ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
+import {
+  SignUpPageStyled,
+  SignUpTitleStyled,
+  SignUpInputStyled,
+  SignUpButtonStyled
+} from './SignUpPage.styled';
 
-export const SignUpPage = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: ""
+interface SignUpFormData {
+  userLogin: string;
+  userEmail: string;
+  userPassword: string;
+}
+
+export const SignUpPage: React.FC = () => {
+  const [formData, setFormData] = useState<SignUpFormData>({
+    userLogin: '',
+    userEmail: '',
+    userPassword: ''
   });
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     try {
-      await register(formData); // Используем ваш сервис для регистрации
-      setSuccess(true);
-      setError("");
+      const response = await axios.post('https://localhost:7168/api/Users', formData);
+      console.log('Registration successful:', response.data);
+      // Handle success (e.g., show a success message or redirect to login page)
     } catch (error) {
-      setSuccess(false);
-      setError("Ошибка при регистрации. Пожалуйста, попробуйте снова.");
+      console.error('Registration failed:', error);
+      // Handle error (e.g., show an error message)
     }
   };
 
   return (
     <SignUpPageStyled onSubmit={handleSubmit}>
       <SignUpTitleStyled>Регистрация</SignUpTitleStyled>
-        <SignUpInputStyled
-          id="username"
-          label="Логин"
-          variant="outlined"
-          color="secondary"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-        <SignUpInputStyled
-          id="email"
-          label="Email"
-          variant="outlined"
-          color="secondary"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <SignUpInputStyled
-          id="password"
-          label="Пароль"
-          variant="outlined"
-          color="secondary"
-          name="password"
-          type="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-        <SignUpButtonStyled type="submit">Зарегистрироваться</SignUpButtonStyled>
-      {error && <p>{error}</p>}
-      {success && <p>Вы успешно зарегистрировались!</p>}
+      <SignUpInputStyled
+        id="userLogin"
+        label="Логин"
+        variant="outlined"
+        color="secondary"
+        name="userLogin"
+        type="text"
+        value={formData.userLogin}
+        onChange={handleChange}
+        required
+      />
+      <SignUpInputStyled
+        id="userEmail"
+        label="Email"
+        variant="outlined"
+        color="secondary"
+        name="userEmail"
+        type="email"
+        value={formData.userEmail}
+        onChange={handleChange}
+        required
+      />
+      <SignUpInputStyled
+        id="userPassword"
+        label="Пароль"
+        variant="outlined"
+        color="secondary"
+        name="userPassword"
+        type="password"
+        value={formData.userPassword}
+        onChange={handleChange}
+        required
+      />
+      <SignUpButtonStyled type="submit">
+        Зарегистрироваться
+      </SignUpButtonStyled>
     </SignUpPageStyled>
   );
 };

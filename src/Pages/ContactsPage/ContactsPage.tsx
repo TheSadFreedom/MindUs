@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { ContactsPageStyled,ContactsPageStyledLogoImg, ContactsPageStyledImg, ContactsPageStyledLink, ContactsPageStyledLinks, ContactsPageStyledTitle } from "./ContactsPage.styled";
 import { Link } from "react-router-dom";
 

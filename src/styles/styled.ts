@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const StyledNavigationLink = styled(Link)(() => ({
-    fontFamily: 'Open Sans',
-    fontSize: '20px',
-    lineHeight: '28px',
-    fontWeight: '400',
-    textDecoration: 'none',
-    color: '#ababab',
-}))
+export const StyledNavigationLink = styled(NavLink)`
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ababab;
+
+  &.active {
+    color: white;
+    text-shadow: 0 0 10px #FFFFFF;  
+}
+`;
 
 export const StyledTitleLink = styled(Link)(() => ({
     fontFamily: 'Proxima Nova',

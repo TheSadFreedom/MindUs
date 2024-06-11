@@ -12,8 +12,6 @@ import {
   StyledH1Edit,
   ShortDescription,
 } from "./MainPage.styled";
-import { Api_Client } from "../../services/Api_client";
-import { StyledH1 } from "../../styles/styled";
 
 const Fluid: string = require("../../Images/Fluid.svg").default;
 

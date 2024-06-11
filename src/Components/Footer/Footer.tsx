@@ -9,7 +9,7 @@ import { StyledNavigationH2, StyledNavigationLink } from '../../styles/styled'
 export const Footer = () =>(
   <footer>
     <FooterStyle>
-      <StyledNavigationH2>AI Store</StyledNavigationH2>
+      <StyledNavigationH2>MindUs</StyledNavigationH2>
       <div>
         <StyledNavigationH2>Контакты</StyledNavigationH2>
         <FooterLinks>

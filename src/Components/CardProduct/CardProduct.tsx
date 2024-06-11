@@ -1,36 +1,30 @@
 import React from "react";
-
 import {
   CardProductStyled,
   CardProductStyledHead,
-  CardProductStyledHeadImg,
   CardProductStyledDescription,
 } from "./CardProduct.styled";
 import { StyledH4, StyledSmallP, StyledTitleLink } from "../../styles/styled";
+import { CallBtn } from "../Buttons/CallBtn/CallBtn";
 
-export const CardProduct = () => {
+interface Props {
+  name: string;
+  author: number;
+  description: string;
+}
+
+export const CardProduct: React.FC<Props> = ({ name, author, description }) => {
   return (
     <CardProductStyled>
       <CardProductStyledHead>
-        <CardProductStyledHeadImg></CardProductStyledHeadImg>
-        <StyledTitleLink to={"/Product"}>Название</StyledTitleLink>
+        <StyledTitleLink to={"/Product"}>{name}</StyledTitleLink>
+        <StyledSmallP>Author: {author}</StyledSmallP>
       </CardProductStyledHead>
       <CardProductStyledDescription>
-        <StyledH4>
-          Описание
-        </StyledH4>
-        <StyledSmallP>
-          Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-          egestas, ac sclitora torquent per conubia nostra, per inceptos
-          himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque
-          ante..
-        </StyledSmallP>
+        <StyledH4>Description:</StyledH4>
+        <StyledSmallP>{description}</StyledSmallP>
       </CardProductStyledDescription>
+      <CallBtn></CallBtn>
     </CardProductStyled>
   );
 };

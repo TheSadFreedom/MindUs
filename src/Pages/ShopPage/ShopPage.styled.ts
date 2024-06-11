@@ -5,10 +5,10 @@ export const ShopPageStyled = styled("form")(() => ({
     width: '100vw',
     
     display: 'grid',
-    gridTemplateColumns: 'repeat(2, 1fr)',
+    gridTemplateColumns: 'repeat(3, 1fr)',
     columnGap: '0px',
     rowGap: '50px',
-
+    
     justifyItems: 'center',
     padding: '20vh 0',
 }));

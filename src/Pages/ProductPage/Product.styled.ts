@@ -26,9 +26,3 @@ export const ProductPageStyledCont2 = styled('div')(() => ({
     columnGap: '5vw',
 }))
 
-export const ProductPageStyledImg = styled('img')(() => ({
-    width:'150px',
-    height: '150px',
-    border: '1px solid white',
-    borderRadius: '10px',
-}))

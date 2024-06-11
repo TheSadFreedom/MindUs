@@ -2,25 +2,19 @@ import styled from "styled-components";
 import { StyledNavigationLink } from "../../styles/styled";
 
 export const CardProductStyled = styled("div")(() => ({
+  display: 'grid',
+  gridTemplateRows: '1fr 3fr 1fr',
   padding: "40px",
-  width: "35vw",
+  width: "20vw",
   height: "450px",
   border: "1px solid white",
   borderRadius: "10px", 
-  
 }));
 
 export const CardProductStyledHead = styled("div")(() => ({
-  display: "grid",
-  gridTemplateColumns: "1fr 3fr",
-  columnGap: "3vw",
-  alignItems: 'center',
+  textAlign: 'center'
 }));
 
-export const CardProductStyledHeadImg = styled("img")(() => ({
-  width: "150px",
-  height: "150px",
-}));
 
 export const CardProductStyledDescription = styled("div")(() => ({
 }));
